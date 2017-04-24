@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>VOLUNG</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			    		<span class="sr-only">Toggle navigation</span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			   		</button>
+		   		<a class="navbar-brand" href="index.html">VOLUNG</a>
+		  		</div>
+			  	<div id="navbar" class="navbar-collapse collapse">
+			   		<ul class="nav navbar-nav navbar-right">
+			    		<li><a href="telaLogin.html">Entrar</a></li>
+			    		<li><a href="telaCadastro.html">Cadastrar-se</a></li>
+			   		</ul>
+			  	</div>
+		 	</div>
+		</nav>
+
+		<br>
+
+		<div id="main" class="container">
+			<h2 class="page-header">Cadasto de ONG</h2>
+		</div>
+
+		<div id="main" class="container">
+			<form action="osController.do" method="post">
+  				<div class="row">
+                    <div class="form-group col-md-3">
+                    </div>
+  	  				<div class="form-group col-md-6">
+  	  					<label>Nome da ONG:</label>
+  	  					<input type="text" name="nomeOng" class="form-control" placeholder="Digite o nome da ONG">
+  	  					<br>
+  	  					<label>Razão Social:</label>
+  	  					<input type="text" name="razaoSocial" class="form-control" placeholder="Digite a razao social">
+  	  					<br>
+  	  					<label>CNPJ:</label>
+  	  					<input type="number" name="cnpj" class="form-control" placeholder="Digite o cnpj">
+  	  					<br>
+  	  					<label>Endereço:</label>
+  	  					<input type="text" name="endereco" class="form-control" placeholder="Digite o endereço">
+  	  					<br>
+  	  					<label>Telefone:</label>
+  	  					<input type="tel" name="telefone" class="form-control" placeholder="Digite o telefone">
+  	  					<br>
+  	  					<label>Email:</label>
+  	  					<input type="email" name="email" class="form-control" placeholder="Digite o email">
+  	  					<br>
+  	  					<label>Data Inicio das Atividades:</label>
+  	  					<input type="date" name="atividadesInicio" class="form-control" placeholder="Digite a data de inicio das atividades">
+  	  					<br>
+  	  				</div>
+  	  				<!--
+  	  				<div class="form-group col-md-6">
+  	  					<label>Nome Gestor:</label>
+  	  					<input type="text" name="nomeGestor" class="form-control" placeholder="Digite o nome do gestor">
+  	  					<br>
+  	  					<label>CPF:</label>
+  	  					<input type="number" name="cpfGestor" class="form-control" placeholder="Digite o cpf domgestor">
+  	  					<br>
+  	  					<label>Email:</label>
+  	  					<input type="email" name="emailGestor" class="form-control" placeholder="Digite o email do gestor">
+  	  					<br>
+  	  					<label>Senha:</label>
+  	  					<input type="password" name="senha" class="form-control" placeholder="Digite a senha">
+  	  					<br>
+  	  					<label>Confirmar Senha:</label>
+  	  					<input type="password" name="senha" class="form-control" placeholder="Confirme a senha">
+  	  					<br>
+  	  				</div>
+  	  				-->
+  	  			</div>
+  	  			<hr/>
+  	  			<div class="row">
+                    <div class="form-group col-md-3">
+                    </div>
+  	  				<div class="form-group col-md-6 text-center">
+  	  					<button type="submit" class="btn btn-primary">Cadastrar</button>
+  	  				</div>
+  	  			</div>
+  	  		</form>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

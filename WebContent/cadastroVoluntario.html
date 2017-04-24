@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>VOLUNG</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			    		<span class="sr-only">Toggle navigation</span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			   		</button>
+		   		<a class="navbar-brand" href="index.html">VOLUNG</a>
+		  		</div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="telaLogin.html">Entrar</a></li>
+              <li><a href="telaCadastro.html">Cadastrar-se</a></li>
+            </ul>
+          </div>
+		 	</div>
+		</nav>
+
+		<br>
+
+		<div id="main" class="container">
+			<h2 class="page-header">Cadastrar Voluntario</h2>
+		</div>
+
+		<div id="main" class="container">
+			<form action="voluntarioController.do" method="post">
+  				<div class="form-group row">
+  	  				<div class="form-group col-md-4">
+  	  					<label>Nome Completo:</label>
+                <br>
+  	  					<input type="text" name="nome" class="form-control">
+  	  					<br>
+  	  					<label>Endereço:</label>
+                <br>
+  	  					<input type="text" name="endereco" class="form-control">
+  	  					<br>
+  	  					<label>Telefone:</label>
+                <br>
+  	  					<input type="tel" name="telefone" class="form-control">
+  	  					<br>
+  	  					<label>Email:</label>
+                <br>
+  	  					<input type="email" name="email" class="form-control">
+  	  					<br>
+  	  					<label>Data de Nascimento:</label>
+                <br>
+  	  					<input type="date" name="dataNasc" class="form-control">
+  	  					<br>
+  	  					<label>CPF:</label>
+                <br>
+  	  					<input type="number" name="cpf" class="form-control">
+  	  					<br>
+  	  					<label>Senha:</label>
+                <br>
+  	  					<input type="password" name="senha" class="form-control">
+  	  					<br>
+  	  				</div>
+  	  				<div class="form-group col-md-4">
+  	  					<div class="list-group">
+    	  					<h4><label>Áreas de Atuação:</label></h4>
+                  <label><input type="checkbox" name="area" value="saude"> Saúde</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="cultura"> Cultura</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="esporte"> Esporte</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="deficiencia"> Promoção dos direitos de pessoas com deficiência</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="crianca"> Promoção dos direitos de crianças e adolescentes</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="ambiente"> Proteção e conservação do meio ambiente</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="investimentos"> Promoção de investimentos</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="competitividade"> Promoção de competitividade</label>
+                  <br>
+                  <label><input type="checkbox" name="area" value="desenvolvimento"> Promoção de desenvolvimento</label>
+                  <br>
+                  <br>
+                  <h4><label>Sexo:</label></h4>
+                  <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+                  <br>
+                  <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+                  <br>
+                  <label><input type="radio" name="sexo" value="Outros"> Outros</label>
+                  <br>
+                  <br>
+	  	  				</div>
+  	  				</div>
+  	  				<div class="form-group col-md-4">
+  	  					<h4><label>Dias e Horários Disponíveis</label></h4>
+  	  					<p>(fazer a parte que recebe os dados)</p>
+  	  					<br>
+                <br>
+                <h4><label>Situação</label></h4>
+                <label><input type="radio" name="situacao" value="disponivel"> Disponível</label>
+                <br>
+                <label><input type="radio" name="situacao" value="ocupado"> Ocupado</label>
+                <br>
+                <label><input type="radio" name="situacao" value="suspenso"> Suspenso</label>
+                <br>
+  	  				</div>
+				</div>
+				<hr/>
+				<div class="row">
+          <div class="form-group col-md-5">
+            <p>.</p>
+          </div>
+					<div class="form-group col-md-6">
+						<button type="submit" class="btn btn-primary">Cadastrar-se</button>
+					</div>
+				</div>
+			</form>
+    </div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
